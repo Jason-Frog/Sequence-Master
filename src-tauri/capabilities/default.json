@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "主窗口默认权限（仅 core，游戏为纯前端无系统调用）",
+  "windows": ["main"],
+  "permissions": ["core:default"]
+}
