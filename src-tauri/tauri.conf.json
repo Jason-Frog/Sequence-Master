@@ -15,9 +15,9 @@
         "title": "Sequence Master",
         "width": 1000,
         "height": 720,
-        "minWidth": 480,
-        "minHeight": 640,
-        "resizable": true,
+        "resizable": false,
+        "maximizable": false,
+        "minimizable": true,
         "fullscreen": false
       }
     ],

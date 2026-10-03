@@ -11,15 +11,18 @@ export function initTabSwitch(initialMode, panelBasic, panelAdvanced, onTabSwitc
   const tabBasic = document.getElementById('tab-basic');
   const tabAdvanced = document.getElementById('tab-advanced');
 
+  const TAB_ACTIVE = 'tab-btn px-3 py-1.5 sm:px-4 sm:py-1 rounded bg-blue-600 text-white text-sm sm:text-base whitespace-nowrap';
+  const TAB_IDLE = 'tab-btn px-3 py-1.5 sm:px-4 sm:py-1 rounded bg-slate-600 hover:bg-slate-500 text-sm sm:text-base whitespace-nowrap';
+
   function setActive(mode) {
     if (mode === GAME_MODES.BASIC) {
-      tabBasic.className = 'tab-btn px-4 py-1 rounded bg-blue-600 text-white';
-      tabAdvanced.className = 'tab-btn px-4 py-1 rounded bg-slate-600 hover:bg-slate-500';
+      tabBasic.className = TAB_ACTIVE;
+      tabAdvanced.className = TAB_IDLE;
       panelBasic.classList.remove('hidden');
       panelAdvanced.classList.add('hidden');
     } else {
-      tabAdvanced.className = 'tab-btn px-4 py-1 rounded bg-blue-600 text-white';
-      tabBasic.className = 'tab-btn px-4 py-1 rounded bg-slate-600 hover:bg-slate-500';
+      tabAdvanced.className = TAB_ACTIVE;
+      tabBasic.className = TAB_IDLE;
       panelAdvanced.classList.remove('hidden');
       panelBasic.classList.add('hidden');
     }
