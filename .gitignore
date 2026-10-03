@@ -151,3 +151,6 @@ vite.config.ts.timestamp-*
 # Tauri
 src-tauri/target/
 src-tauri/gen/schemas/
+src-tauri/gen/android/app/keystore.properties
+*.keystore
+*.jks
