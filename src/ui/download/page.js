@@ -41,7 +41,7 @@ export function renderDownloadPage() {
         <p class="text-sm text-slate-400">universal APK · 全架构通用</p>
         <a href="${GITEE_APK}" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-medium px-4 py-2 rounded-lg">下载 APK（国内高速）</a>
         <a href="${GH_APK}" class="w-full border border-white/20 hover:bg-white/10 px-4 py-2 rounded-lg">GitHub 原站下载</a>
-        <p class="text-xs text-slate-500">Android 8.0+ · 未上架应用商店，需在设置中允许安装未知来源应用</p>
+        <p class="text-xs text-slate-500">Android 7.0+ · 未上架应用商店，需在设置中允许安装未知来源应用</p>
       `)}
       ${card(`
         <div class="text-4xl">&#127760;</div>
